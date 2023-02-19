@@ -1,0 +1,13 @@
+export { ReactComponent as BillLogo } from "./Bill.svg";
+export { ReactComponent as CarLogo } from "./Car.svg";
+export { ReactComponent as ClothLogo } from "./Cloth.svg";
+export { ReactComponent as CommunicationLogo } from "./Communication.svg";
+export { ReactComponent as EntertainmentLogo } from "./Entertainment.svg";
+export { ReactComponent as FoodLogo } from "./Food.svg";
+export { ReactComponent as GiftLogo } from "./Gift.svg";
+export { ReactComponent as HealthLogo } from "./Health.svg";
+export { ReactComponent as HouseLogo } from "./House.svg";
+export { ReactComponent as PetsLogo } from "./Pets.svg";
+export { ReactComponent as SportsLogo } from "./Sports.svg";
+export { ReactComponent as TransportLogo } from "./Transport.svg";
+export { ReactComponent as ReloadLogo } from "./Reload.svg";
