@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Button, ExpenseDialog, ExpensesLogs, Quotes } from "./components";
 import { Expense } from "./interfaces";
+import { fetchPosts } from "./redux/sagaActions";
+import { useAppDispatch } from "./redux/store";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [editedExpense, setEditedExpense] = useState<Expense | null>(null);
+  const dispatch = useAppDispatch();
 
   const handleAddExpense = () => {
     setEditedExpense(null);
@@ -14,6 +17,10 @@ function App() {
   const handleEditExpense = (log: Expense) => {
     setEditedExpense(log);
     setIsOpen(true);
+  };
+
+  const handleFetchPosts = () => {
+    dispatch(fetchPosts());
   };
 
   return (
@@ -33,6 +40,9 @@ function App() {
           </div>
           <Button variant="contained" onClick={handleAddExpense}>
             Add Expense
+          </Button>
+          <Button onClick={handleFetchPosts} className="mt-2">
+            Fetch Posts
           </Button>
         </section>
         <section className="flex flex-col  py-4 px-6 ">

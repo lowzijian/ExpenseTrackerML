@@ -7,7 +7,7 @@ const initialState: ExpenseStateInterface = {
 };
 
 export const ExpenseSlice = createSlice({
-  name: "allProduct",
+  name: "expense",
   initialState,
   reducers: {
     addExpense: (
